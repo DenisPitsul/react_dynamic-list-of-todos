@@ -56,7 +56,7 @@ export const App: React.FC = () => {
       .finally(() => setIsTodosLoading(false));
   }, []);
 
-  const filteredTodos = getFilteredTodos(todos, { filterType, query });
+  const filteredTodos = getFilteredTodos(todos, { query, filterType });
 
   return (
     <>
